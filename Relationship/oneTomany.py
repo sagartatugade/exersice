@@ -18,7 +18,7 @@ class Account(db.Model):
     atype= db.Column(db.String(100), nullable=False)
     customer_id= db.Column(db.Integer(), db.ForeignKey('customer.id'), nullable=False, unique=True)
 
-
+#New comment
 def drop_Table():
     db.drop_all()
 
